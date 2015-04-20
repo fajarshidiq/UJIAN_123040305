@@ -14,7 +14,7 @@ public class Soal {
         int n = 1;
         while (n <= pangkat) {
             n++;
-            hasil *= bil;
+            hasil += bil;
         }
         return hasil;
     }
@@ -22,11 +22,11 @@ public class Soal {
     public int faktorial(int bil) {
         int hasil = 1;
         for (int i = 1; i <= bil; i++) {
-            hasil *= i;
+            hasil += i;
         }
         return hasil;
     }
-    public int perkalian(int bilA, int bilB) {
-        return bilA * bilB;
+    public int pertambahan(int bilA, int bilB) {
+        return bilA + bilB;
     }
 }
